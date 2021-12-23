@@ -141,10 +141,10 @@
     select count(*) from t_book_info
     <where>
       <if test="bookname != null and bookname != '' ">
-        and bookName like concat('%',#{bookname},'%')
+        and bookName like concat(concat('%',#{bookname}),'%')
       </if>
       <if test="bookauthor != null and bookauthor != '' ">
-        and bookAuthor like concat('%',#{bookauthor},'%')
+        and bookAuthor like concat(concat('%',#{bookauthor}),'%')
       </if>
       <if test="booktypeid != null and booktypeid != '' ">
         and bookTypeId = #{booktypeid}
@@ -158,10 +158,10 @@
       from t_book_info
       <where>
         <if test="bookname != null and bookname != '' ">
-          and bookName like concat('%',#{bookname},'%')
+          and bookName like concat(concat('%',#{bookname}),'%')
         </if>
         <if test="bookauthor != null and bookauthor != '' ">
-          and bookAuthor like concat('%',#{bookauthor},'%')
+          and bookAuthor like concat(concat('%',#{bookauthor}),'%')
         </if>
         <if test="booktypeid != null and booktypeid != '' ">
           and bookTypeId = #{booktypeid}

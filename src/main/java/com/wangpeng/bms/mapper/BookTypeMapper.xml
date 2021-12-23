@@ -86,7 +86,7 @@
     select count(*) from t_book_type
     <where>
       <if test="booktypename != null and booktypename != '' ">
-        and bookTypeName like concat('%',#{booktypename},'%')
+        and bookTypeName like concat(concat('%',#{booktypename}),'%')
       </if>
     </where>
   </select>
@@ -96,7 +96,7 @@
       from t_book_type
       <where>
         <if test="booktypename != null and booktypename != '' ">
-          and bookTypeName like concat('%',#{booktypename},'%')
+          and bookTypeName like concat(concat('%',#{booktypename}),'%')
         </if>
       </where>
     )
