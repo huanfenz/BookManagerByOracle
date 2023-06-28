@@ -22,7 +22,8 @@
 
 1.   因为Oracle中不能用user作为表名，所以我在所有表名前面加上了前缀t_
 
-![image-20211204152806971](http://wangpeng-imgsubmit.oss-cn-hangzhou.aliyuncs.com/img/202112041528019.png)
+![orc1](https://github.com/huanfenz/BookManagerByOracle/assets/49386166/472cbafa-5cc9-4c4c-a4f5-42178f2ad2c2)
+
 
 2.   尤其要注意，无论表名还是字段名，都不区分大小写。如果是导入的，工具可能会强行区分，然后给每个字段名都加上了双引号，非常不方便。所以最好就全部大写，然后用下划线分割。
 3.   部分数据类型的长度标准不同（具体自行查阅），所以字符串类型的长度我都增加为2倍。
@@ -120,12 +121,11 @@ Oracle版和MySQL版功能完全一致，所以演示中还是使用MySQL数据�
 
 ## 联系方式
 
-我的博客地址：[个人博客](http://huanfenz.top)，[CSDN博客](https://blog.csdn.net/qq_34245098?spm=1000.2115.3001.5343)。欢迎大家来踩。
+我的博客地址：[个人博客](http://huanfenz.top)。欢迎大家来踩。
 
 我的联系方式，欢迎联系我：
 
 *   邮箱：`huanfenz@qq.com`
-*   QQ：`894176237`
 
 
 
